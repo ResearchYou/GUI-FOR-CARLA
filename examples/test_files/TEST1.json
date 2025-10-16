@@ -1,0 +1,26 @@
+        "88": {
+            "source"     :"chasis",
+            "execution"  :"power train",
+            "name"       :"steeering wheel operation position",
+            "level"      :"command",
+            "type"       :"operation",
+            "period"     :10,
+            "datasize"   :2,
+            "min"        :-511,
+            "max"        :511,
+            "carlaVar"   :"steer",
+            "data" : 100
+        },
+        "47": {
+            "source"     :"chasis",
+            "execution"  :"power train",
+            "name"       :"accelerator pedal operation indicator",
+            "level"      :"command",
+            "type"       :"dummy",
+            "period"     :10,
+            "datasize"   :2,
+            "min"        :0,
+            "max"        :1023,
+            "carlaVar"   :"throttle",
+            "data" : 800
+        }

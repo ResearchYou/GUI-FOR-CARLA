@@ -1,0 +1,240 @@
+{
+    "python format string": "{:03x} {:0{datasize}x}",
+    "can_id": {
+        "26": {
+            "source": "chasis",
+            "execution": "power train",
+            "name": "break operation indicator",
+            "level": "command",
+            "type": "operation",
+            "period": 10,
+            "datasize": 2,
+            "min": 0,
+            "max": 1023,
+            "carlaVar": "brake"
+        },
+        "47": {
+            "source": "chasis",
+            "execution": "power train",
+            "name": "accelerator pedal operation indicator",
+            "level": "command",
+            "type": "dummy",
+            "period": 10,
+            "datasize": 2,
+            "min": 0,
+            "max": 1023,
+            "carlaVar": "throttle"
+        },
+        "88": {
+            "source": "chasis",
+            "execution": "power train",
+            "name": "steeering wheel operation position",
+            "level": "command",
+            "type": "operation",
+            "period": 10,
+            "datasize": 2,
+            "min": -511,
+            "max": 511,
+            "carlaVar": "steer"
+        },
+        "109": {
+            "source": "chasis",
+            "execution": "power train",
+            "name": "shift position switch",
+            "level": "command",
+            "type": "operation",
+            "period": 10,
+            "datasize": 1,
+            "min": 0,
+            "max": [
+                10,
+                20
+            ],
+            "carlaVar": "gear"
+        },
+        "440": {
+            "source": "chasis",
+            "execution": "power train",
+            "name": "engine start button",
+            "level": "command",
+            "type": "operation",
+            "period": 50,
+            "datasize": 1,
+            "min": 0,
+            "max": 1,
+            "carlaVar": "ignition"
+        },
+        "131": {
+            "source": "chasis",
+            "execution": "body",
+            "name": "right/left turn signal, hazzard switch",
+            "level": "command",
+            "type": "operation",
+            "period": 10,
+            "datasize": 1,
+            "min": 0,
+            "max": [
+                1,
+                2,
+                4
+            ],
+            "carlaVar": "lightTurn"
+        },
+        "152": {
+            "source": "chasis",
+            "execution": "body",
+            "name": "horn switch",
+            "level": "command",
+            "type": "operation",
+            "period": 10,
+            "datasize": 1,
+            "min": 0,
+            "max": 1,
+            "carlaVar": null
+        },
+        "423": {
+            "source": "chasis",
+            "execution": "body",
+            "name": "position/head lights/high beam switch",
+            "level": "command",
+            "type": "operation",
+            "period": 50,
+            "datasize": 1,
+            "min": 0,
+            "max": [
+                1,
+                2,
+                4,
+                8
+            ],
+            "carlaVar": "lightFront"
+        },
+        "433": {
+            "source": "chasis",
+            "execution": "body",
+            "name": "headligh flashing switch",
+            "level": "command",
+            "type": "operation",
+            "period": 50,
+            "datasize": 1,
+            "min": 0,
+            "max": 8,
+            "carlaVar": "passing"
+        },
+        "604": {
+            "source": "chasis",
+            "execution": "body",
+            "name": "front wiper/intermittent/low/high/washer switch",
+            "level": "command",
+            "type": "operation",
+            "period": 100,
+            "datasize": 1,
+            "min": 0,
+            "max": [
+                1,
+                2,
+                4,
+                10
+            ],
+            "carlaVar": null
+        },
+        "625": {
+            "source": "chasis",
+            "execution": "body",
+            "name": "rear wiper/washer switch",
+            "level": "command",
+            "type": "operation",
+            "period": 100,
+            "datasize": 1,
+            "min": 0,
+            "max": [
+                1,
+                2,
+                3
+            ],
+            "carlaVar": null
+        },
+        "646": {
+            "source": "body",
+            "execution": "chasis",
+            "name": "doors lock/unlock switch",
+            "level": "command",
+            "type": "operation",
+            "period": 100,
+            "datasize": 1,
+            "min": 0,
+            "max": [
+                1,
+                2,
+                3
+            ],
+            "carlaVar": null
+        },
+        "457": {
+            "source": "chasis",
+            "execution": "power train",
+            "name": "parking brake",
+            "level": "command",
+            "type": "operation",
+            "period": 50,
+            "datasize": 1,
+            "min": 0,
+            "max": 1,
+            "carlaVar": "hand_brake"
+        },
+        "668": {
+            "source": "chasis",
+            "execution": "body",
+            "name": "right door/window lifting switch",
+            "level": "command",
+            "type": "operation",
+            "period": 100,
+            "datasize": 1,
+            "min": 0,
+            "max": [
+                1,
+                2
+            ],
+            "carlaVar": null
+        },
+        "689": {
+            "source": "chasis",
+            "execution": "body",
+            "name": "left door/window lifting switch",
+            "level": "command",
+            "type": "operation",
+            "period": 100,
+            "datasize": 1,
+            "min": 0,
+            "max": [
+                1,
+                2
+            ],
+            "carlaVar": null
+        },
+        "1313": {
+            "source": "body",
+            "execution": "CGW",
+            "name": "lane departure sound alert",
+            "level": "command",
+            "type": "boolean",
+            "period": 10,
+            "datasize": 1,
+            "min": 0,
+            "max": 1,
+            "carlaVar": "lane_departure_sound"
+        },
+        "1200": {
+            "source": "body",
+            "execution": "chasis",
+            "name": "collision alert trigger",
+            "level": "command",
+            "type": "operation",
+            "period": 10,
+            "datasize": 1,
+            "min": 0,
+            "max": 1,
+            "carlaVar": "collision"
+        }
+    }
+}
